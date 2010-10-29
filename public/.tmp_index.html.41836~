@@ -11,10 +11,9 @@
         </style>
     </head>
     <body>
-        <h1>Hello Rails - John Salley Demo</h1>
-		
-		<ul><li>
-			<%= link_to "Simple Threaded Comments", comments_path %> 
-		</li></ul>
+        <h1>John Salley Demo</h1>
+        <div>
+            Hello World
+        </div>
     </body>
 </html>
