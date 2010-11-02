@@ -25,7 +25,6 @@ class CommentsController < ApplicationController
   # GET /comments/new.xml
   def new
     @comment = Comment.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @comment }

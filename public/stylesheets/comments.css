@@ -1,0 +1,35 @@
+.comments {
+    width: 600px;
+}
+
+.bar {
+    -moz-border-radius: 3px 3px 3px 3px;
+    background-color: #CFCFCF;
+    border: #999999 1px solid;
+    height:20px;
+    line-height: normal;
+	padding:2px;
+}
+
+.topbar {
+    background-color: #C3C3C3;
+}
+
+.panel {
+    margin-top:3px;
+}
+
+.panel .body {
+    padding:3px;
+}
+
+.bar .left {
+    float:left;
+}
+
+.bar .left img {
+}
+
+.bar .right {
+    float:right;
+}

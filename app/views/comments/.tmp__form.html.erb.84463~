@@ -15,9 +15,21 @@
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </div>
-  <div class="hiddenfield">
-  	<%= f.hidden_field :user_id, :value=>0 %>
-    <%= f.hidden_field :parent_id, :value=>0 %>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_id %><br />
+    <%= f.text_field :parent_id %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
   </div>
   <div class="actions">
     <%= f.submit %>

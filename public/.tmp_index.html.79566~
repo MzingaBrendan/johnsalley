@@ -2,7 +2,13 @@
 <html>
     <head>
         <title>John Salley</title>
-		<link rel="stylesheet" href="/stylesheets/scaffold.css">
+        <style>
+            
+            h1 {
+                font-size: 28px;
+                color: #000;
+            }
+        </style>
     </head>
     <body>
         <h1>Hello Rails - John Salley Demo</h1>

@@ -1,31 +1,41 @@
-<h1>Listing comments</h1>
+<h1>Comments</h1>
+<div class="comments">
+	
+    <div class="bar topbar">
+        <div class="left">
+        </div>
+        <div class="right">
+            <%= link_to 'Add Comment', new_comment_path %>
+        </div>
+    </div>
 
-<table>
-  <tr>
-    <th>Content</th>
-    <th>User</th>
-    <th>Parent</th>
-    <th>Created at</th>
-    <th>Updated at</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @comments.each do |comment| %>
-  <tr>
-    <td><%= comment.content %></td>
-    <td><%= comment.user_id %></td>
-    <td><%= comment.parent_id %></td>
-    <td><%= comment.created_at %></td>
-    <td><%= comment.updated_at %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Comment', new_comment_path %>
+    <div class="commentslist">
+        <% @comments.each do |comment| %>
+        <div class="panel">
+            <div class="head">
+                <div class="bar">
+                    <div class="left">
+                        <div>
+                            Post By: Guest
+                        </div>
+                        <!--<%= comment.user_id %><%= comment.parent_id %>-->
+                    </div>
+                    <div class="right">
+                        <!--<%= comment.created_at %>
+                        <%= comment.updated_at %>-->
+                        <%= time_ago_in_words( comment.created_at ) %> ago
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <%= image_tag "Icon-highlighted-avatar.png", :align=>"right" %>
+                <%= comment.content %>
+            </div>
+            <div class="foot">
+                <!--<%= link_to 'Show', comment %>-->
+                <%= link_to 'Edit', edit_comment_path(comment) %>| <%= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete %>
+            </div>
+        </div>
+        <% end %>
+    </div>
+</div>
