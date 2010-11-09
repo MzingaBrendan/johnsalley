@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
   # GET /comments.xml
   def index
     @comments = Comment.all
-
+    @comment = Comment.new
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @comments }

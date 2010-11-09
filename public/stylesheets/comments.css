@@ -6,7 +6,7 @@
     -moz-border-radius: 3px 3px 3px 3px;
     background-color: #CFCFCF;
     border: #999999 1px solid;
-    height:20px;
+    height:18px;
     line-height: normal;
 	padding:2px;
 }
@@ -20,16 +20,34 @@
 }
 
 .panel .body {
-    padding:3px;
+    padding:5px;
+}
+
+.panel .foot {
+    padding:5px;
 }
 
 .bar .left {
     float:left;
+	width:48%;
 }
 
-.bar .left img {
+.bar .left .avatar {
+	margin-right:3px;
+}
+
+.bar .left .avatar img {
+	border:1px solid #000000;
 }
 
 .bar .right {
     float:right;
+	text-align:right;
+	width:48%;
+}
+
+textarea#comment_content {
+	width:575px;
+	height:150px;
+	
 }
